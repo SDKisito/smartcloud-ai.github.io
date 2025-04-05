@@ -23,6 +23,16 @@
                     <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="expertise.html">Expertise</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown">
+                            Projets
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="projects/sock-shop.html">Sock Shop</a></li>
+                            <li><a class="dropdown-item" href="projects/clinical-ner.html">Clinical NER</a></li>
+                            <li><a class="dropdown-item" href="projects/alzheimer-detection.html">Détection Alzheimer</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -40,7 +50,7 @@
                     <p class="lead mb-4">Passionnés par les données et l'innovation, nous excellons dans les solutions IA, DevOps et Data Science pour accompagner vos projets ambitieux.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                         <a href="services.html" class="btn btn-primary btn-lg px-4 me-sm-3">Nos services</a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contactez-nous</a>
+                        <a href="#projects" class="btn btn-outline-light btn-lg px-4">Nos projets</a>
                     </div>
                 </div>
             </div>
@@ -197,6 +207,54 @@
         </div>
     </section>
 
+    <!-- Projets -->
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nos Projets Récents</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/img/projects/sock-shop.jpg" class="card-img-top" alt="Sock Shop">
+                        <div class="card-body">
+                            <h3 class="card-title">Sock Shop</h3>
+                            <p class="card-text">Plateforme e-commerce avec architecture microservices et système de recommandation IA.</p>
+                            <div class="mt-auto">
+                                <a href="projects/sock-shop.html" class="btn btn-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/img/projects/clinical-ner.jpg" class="card-img-top" alt="Clinical NER">
+                        <div class="card-body">
+                            <h3 class="card-title">Clinical NER</h3>
+                            <p class="card-text">Reconnaissance d'entités médicales dans les comptes-rendus cliniques avec NLP.</p>
+                            <div class="mt-auto">
+                                <a href="projects/clinical-ner.html" class="btn btn-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/img/projects/alzheimer.jpg" class="card-img-top" alt="Détection Alzheimer">
+                        <div class="card-body">
+                            <h3 class="card-title">Détection Alzheimer</h3>
+                            <p class="card-text">Système de détection précoce par analyse d'images IRM avec Deep Learning.</p>
+                            <div class="mt-auto">
+                                <a href="projects/alzheimer-detection.html" class="btn btn-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="projects/data-science.html" class="btn btn-outline-primary">Voir tous nos projets</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Approche -->
     <section class="approach-section py-5">
         <div class="container">
@@ -252,34 +310,29 @@
             <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <h3 class="mb-4">Informations de contact</h3>
-                    <p><i class="bi bi-envelope me-2"></i> <a href="diedhiou_zal@yahoo.fr" class="text-white">diedhiou_zal@yahoo.fr</a></p>
-                    <p><i class="bi bi-telephone me-2"></i> +337 68 04 81 36</p>
-                    <p><i class="bi bi-geo-alt me-2"></i> Adresse de l'entreprise: 96 Boulevard Bauchière, 83200 Toulon</p>
+                    <p><i class="bi bi-envelope me-2"></i> <a href="mailto:diedhiou_zal@yahoo.fr" class="text-white">diedhiou_zal@yahoo.fr</a></p>
+                    <p><i class="bi bi-telephone me-2"></i> +33 7 68 04 81 36</p>
+                    <p><i class="bi bi-geo-alt me-2"></i> 96 Boulevard Bausset, 83000 Toulon</p>
                     
                     <div class="mt-4">
                         <h4 class="mb-3">Suivez-nous</h4>
-                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-github fs-4"></i></a>
+                        <a href="https://github.com/SDKisito" class="text-white me-3"><i class="bi bi-github fs-4"></i></a>
+                        <a href="https://linkedin.com/in/votreprofil" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form>
+                    <form id="contactForm" action="https://formspree.io/f/diedhiou_zal@yahoo.fr" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Nom complet</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Sujet</label>
-                            <input type="text" class="form-control" id="subject" required>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Envoyer</button>
                     </form>
