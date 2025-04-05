@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sock Shop | SmartCloud AI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo.png" alt="SmartCloud AI" height="40">
+            </a>
+            <!-- Navigation items -->
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <article class="project-article">
+            <header class="mb-5 text-center">
+                <h1 class="display-4">SOCK SHOP - Architecture Microservices</h1>
+                <p class="lead text-muted">Plateforme e-commerce évolutive avec système de recommandation IA</p>
+                <img src="../assets/img/projects/sock-shop.jpg" alt="Sock Shop" class="img-fluid rounded mt-4">
+            </header>
+
+            <section class="mb-5">
+                <h2 class="mb-4">📌 Contexte</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Développement d'une boutique en ligne de chaussettes utilisant une architecture microservices pour une scalabilité optimale.</p>
+                        <ul>
+                            <li><strong>Période :</strong> Mars 2023 - Juin 2023</li>
+                            <li><strong>Client :</strong> Entreprise retail européenne</li>
+                            <li><strong>Équipe :</strong> 3 DevOps, 2 Data Scientists</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-light p-3">
+                            <h5>🛠 Technologies clés</h5>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge bg-primary">Kubernetes</span>
+                                <span class="badge bg-primary">Docker</span>
+                                <span class="badge bg-primary">Terraform</span>
+                                <span class="badge bg-primary">Python</span>
+                                <span class="badge bg-primary">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-4">🎯 Objectifs</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Scalabilité</h5>
+                                <p>Gérer 10 000 requêtes/minute pendant les pics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Recommandation</h5>
+                                <p>Système IA augmentant le panier moyen de 15%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Disponibilité</h5>
+                                <p>99.99% uptime avec monitoring temps réel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-4">⚙️ Architecture Technique</h2>
+                <div class="text-center mb-4">
+                    <img src="../assets/img/projects/sock-shop-archi.jpg" alt="Architecture" class="img-fluid rounded border">
+                    <p class="text-muted mt-2">Diagramme d'architecture microservices</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Services Principaux</h5>
+                        <ul>
+                            <li>Service Catalogue (Node.js)</li>
+                            <li>Service Paiement (Java Spring)</li>
+                            <li>Service Recommandation (Python/ML)</li>
+                            <li>Service Utilisateurs (Go)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Infrastructure</h5>
+                        <ul>
+                            <li>Cluster Kubernetes (EKS)</li>
+                            <li>Base de données MongoDB</li>
+                            <li>Redis pour le cache</li>
+                            <li>Prometheus + Grafana</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-4">📊 Résultats</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-success border-2">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Succès</h5>
+                                <ul>
+                                    <li>+22% de conversion</li>
+                                    <li>Réduction des coûts cloud de 35%</li>
+                                    <li>Temps de déploiement réduit à 5min</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-primary border-2">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Métriques</h5>
+                                <ul>
+                                    <li>Latence moyenne: 120ms</li>
+                                    <li>Disponibilité: 99.992%</li>
+                                    <li>Auto-scaling: 3-15 pods</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <!-- Footer commun -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
