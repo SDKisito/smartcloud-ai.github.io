@@ -60,6 +60,69 @@
     .step {
         flex-direction: column;
     }
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    padding: 6rem 0;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #f8f9fa;
+}
+
+.projects-section .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.projects-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.projects-section .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.projects-section .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-section .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* Contact Form */
+#contactForm .form-control {
+    background-color: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
+    color: white;
+}
+
+#contactForm .form-control:focus {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+#contactForm label {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
     
     .step-number {
         align-self: flex-start;
