@@ -1,42 +1,67 @@
-/* Couleurs principales */
-:root {
-    --primary: #2c3e50;
-    --secondary: #3498db;
+/* Styles communs aux pages projets */
+.project-article {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 56px;
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
 }
 
-.navbar {
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.process-steps::before {
+    content: "";
+    position: absolute;
+    left: 1.2rem;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #3498db;
+    border-radius: 3px;
 }
 
-.hero {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    padding: 3rem;
+.step {
+    display: flex;
+    gap: 1rem;
+    position: relative;
 }
 
-.card {
-    transition: transform 0.3s;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+    z-index: 1;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.btn-primary {
-    background-color: var(--secondary);
-    border-color: var(--secondary);
+.step-content {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    flex-grow: 1;
+    border: 1px solid #dee2e6;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .hero {
-        padding: 2rem 1rem;
+    .process-steps {
+        padding-left: 1.5rem;
+    }
+    
+    .step {
+        flex-direction: column;
+    }
+    
+    .step-number {
+        align-self: flex-start;
     }
 }
