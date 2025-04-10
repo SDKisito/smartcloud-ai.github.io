@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SmartCloud AI",
+  "description": "Plateforme cloud d'intelligence artificielle pour entreprises - Solutions SaaS d'automatisation intelligente et d'analyse prédictive",
+  "operatingSystem": "Web, Windows, macOS, Linux",
+  "applicationCategory": "BusinessApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "SmartCloud AI",
+    "url": "https://sdkisito.github.io/smartcloud-ai.github.io/"
+  },
+  "keywords": "IA, Intelligence Artificielle, Cloud, SaaS, Automatisation, Analyse Prédictive"
+}

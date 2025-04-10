@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science - SmartCloud AI</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../../assets/img/logo.png" alt="SmartCloud AI Logo">
+            <h1>SmartCloud AI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../expertise.html">Expertise</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <section class="project-header">
+            <h2>Classification des innovations environnementales en France</h2>
+            <img src="../../assets/img/projects/approach.jpg" alt="Data Science Project">
+            <div class="project-meta">
+                <span class="date">Août 2024</span>
+                <span class="category">Data Science • Économétrie • Environnement</span>
+            </div>
+        </section>
+
+        <section class="project-content">
+            <h3>Objectif</h3>
+            <p>Création d'un modèle capable de classifier les innovations environnementales et de prédire les futures tendances en France, dans un contexte de transition énergétique.</p>
+            
+            <h3>Données utilisées</h3>
+            <p>Données de l'Enquête communautaire sur l'innovation (CIS) issues du CASD (Centre d'Accès Sécurisé aux Données), fournissant des informations quantitatives sur :</p>
+            <ul>
+                <li>Fréquence de l'innovation par nature</li>
+                <li>Montant des dépenses d'innovation</li>
+                <li>Coopérations et financements</li>
+            </ul>
+            
+            <h3>Approche méthodologique</h3>
+            <div class="methodology">
+                <div class="method-step">
+                    <h4>1. Classification</h4>
+                    <ul>
+                        <li>Secteur d'application : énergie, transport, agriculture...</li>
+                        <li>Type d'innovation : technologique, organisationnelle...</li>
+                        <li>Impact environnemental : CO2, gestion des ressources...</li>
+                    </ul>
+                </div>
+                
+                <div class="method-step">
+                    <h4>2. Modélisation</h4>
+                    <ul>
+                        <li>Algorithmes de classification supervisée</li>
+                        <li>Feature engineering</li>
+                        <li>Validation croisée</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3>Résultats</h3>
+            <table class="performance-table">
+                <thead>
+                    <tr>
+                        <th>Modèle</th>
+                        <th>CV Score</th>
+                        <th>ROC AUC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>XGBoost</td>
+                        <td>92.18%</td>
+                        <td>90.06%</td>
+                    </tr>
+                    <tr>
+                        <td>LightGBM</td>
+                        <td>92.17%</td>
+                        <td>89.99%</td>
+                    </tr>
+                    <tr>
+                        <td>Random Forest</td>
+                        <td>91.88%</td>
+                        <td>88.19%</td>
+                    </tr>
+                    <tr>
+                        <td>Decision Tree</td>
+                        <td>92.08%</td>
+                        <td>87.83%</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Applications</h3>
+            <ul>
+                <li>Identification des domaines prioritaires</li>
+                <li>Accélération de l'adoption des innovations</li>
+                <li>Recommandations politiques</li>
+            </ul>
+        </section>
+
+        <section class="project-gallery">
+            <h3>Visualisations</h3>
+            <div class="gallery-grid">
+                <img src="../../assets/img/projects/data-science-1.jpg" alt="Feature Importance">
+                <img src="../../assets/img/projects/data-science-2.jpg" alt="Confusion Matrix">
+                <img src="../../assets/img/projects/data-science-3.jpg" alt="Innovation Trends">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contactez-moi</h3>
+            <p><strong>Email :</strong> contact@smartcloud-ai.com</p>
+            <p><strong>Téléphone :</strong> +33 6 12 34 56 78</p>
+            <p><strong>Adresse :</strong> 123 Rue de l'Innovation, 75000 Paris, France</p>
+        </div>
+        <p>&copy; 2025 SmartCloud AI. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - SmartCloud AI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../assets/img/logo.png" alt="SmartCloud AI Logo">
+            <h1>SmartCloud AI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-intro">
+            <h2>Nos Services</h2>
+            <p>SmartCloud AI propose une gamme complète de services pour transformer vos données en avantage compétitif.</p>
+        </section>
+
+        <section class="services-grid">
+            <div class="service-card">
+                <img src="../assets/img/services/data-science.jpg" alt="Data Science">
+                <h3>Data Science & AI</h3>
+                <ul>
+                    <li>Machine Learning et Deep Learning</li>
+                    <li>Computer Vision et NLP</li>
+                    <li>Analyse prédictive</li>
+                    <li>Solutions d'IA sur mesure</li>
+                </ul>
+                <a href="projects/data-science.html" class="service-link">Voir nos projets</a>
+            </div>
+
+            <div class="service-card">
+                <img src="../assets/img/services/mlops.jpg" alt="MLOps">
+                <h3>MLOps & DevOps</h3>
+                <ul>
+                    <li>Architectures microservices</li>
+                    <li>Automatisation CI/CD</li>
+                    <li>Infrastructure as Code</li>
+                    <li>Orchestration Kubernetes</li>
+                </ul>
+                <a href="projects/sock-shop.html" class="service-link">Voir nos projets</a>
+            </div>
+
+            <div class="service-card">
+                <img src="../assets/img/services/econometric.jpg" alt="Econometric Analysis">
+                <h3>Analyse Économétrique</h3>
+                <ul>
+                    <li>Évaluation d'impact</li>
+                    <li>Analyse des politiques d'innovation</li>
+                    <li>Modélisation économique</li>
+                    <li>Études quantitatives</li>
+                </ul>
+                <a href="projects/clinical-ner.html" class="service-link">Voir nos projets</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Intéressé par nos services ?</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service intéressé :</label>
+                    <select id="service" name="service">
+                        <option value="data-science">Data Science & AI</option>
+                        <option value="mlops">MLOps & DevOps</option>
+                        <option value="econometric">Analyse Économétrique</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SmartCloud AI. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

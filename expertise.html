@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Expertise - SmartCloud AI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../assets/img/logo.png" alt="SmartCloud AI Logo">
+            <h1>SmartCloud AI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="expertise-intro">
+            <h2>Notre Expertise</h2>
+            <p>Une combinaison unique de compétences techniques et analytiques pour des solutions innovantes.</p>
+        </section>
+
+        <section class="expertise-details">
+            <div class="expertise-area">
+                <h3>Ingénierie DevOps</h3>
+                <ul>
+                    <li>Kubernetes (EKS/GKE/AKS) et Docker Swarm</li>
+                    <li>CI/CD avec GitLab CI et GitHub Actions</li>
+                    <li>Infrastructure as Code (Terraform, Ansible)</li>
+                    <li>Monitoring avec Prometheus, Grafana et ELK Stack</li>
+                </ul>
+            </div>
+
+            <div class="expertise-area">
+                <h3>Data Science & AI</h3>
+                <ul>
+                    <li>Réseaux de Neurones Convolutifs (CNN)</li>
+                    <li>Computer Vision et traitement d'images</li>
+                    <li>Natural Language Processing (NLP)</li>
+                    <li>Modèles prédictifs (XGBoost, LightGBM, Random Forest)</li>
+                </ul>
+            </div>
+
+            <div class="expertise-area">
+                <h3>Économie Quantitative</h3>
+                <ul>
+                    <li>Modélisation économétrique avancée</li>
+                    <li>Analyse des politiques d'innovation</li>
+                    <li>Évaluation d'impact des technologies</li>
+                    <li>Méthodologie CDM (Crépon-Duguet-Mairesse)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects-showcase">
+            <h2>Projets démontrant notre expertise</h2>
+            
+            <div class="project-showcase">
+                <h3>Sock Shop - Architecture Microservices & DevOps</h3>
+                <p>Développement et déploiement d'une application e-commerce en microservices sur le Cloud avec approche DevOps complète.</p>
+                <ul>
+                    <li>Orchestration avec Kubernetes et Docker Swarm</li>
+                    <li>Pipelines CI/CD automatisés avec GitLab CI/GitHub Actions</li>
+                    <li>Infrastructure as Code avec Terraform et Ansible</li>
+                    <li>Monitoring avec Prometheus, Grafana et ELK Stack</li>
+                </ul>
+            </div>
+
+            <div class="project-showcase">
+                <h3>Détection de la maladie d'Alzheimer par vision par ordinateur</h3>
+                <p>Système automatique de détection des premiers signes d'Alzheimer par analyse d'IRM avec CNN.</p>
+                <ul>
+                    <li>Training Accuracy: 99.28%</li>
+                    <li>Validation Accuracy: 86.35%</li>
+                    <li>Testing Accuracy: 84.91%</li>
+                </ul>
+            </div>
+
+            <div class="project-showcase">
+                <h3>Classification des innovations environnementales en France</h3>
+                <p>Modélisation pour classifier les innovations environnementales et prédire les tendances futures.</p>
+                <ul>
+                    <li>XGBoost: Cross Validation Score 92.18%, ROC_AUC 90.06%</li>
+                    <li>LightGBM: Cross Validation Score 92.17%, ROC_AUC 89.99%</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Parlez-nous de votre projet</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="expertise">Domaine d'expertise concerné :</label>
+                    <select id="expertise" name="expertise">
+                        <option value="devops">Ingénierie DevOps</option>
+                        <option value="datascience">Data Science & AI</option>
+                        <option value="econometrics">Économie Quantitative</option>
+                        <option value="multiple">Plusieurs domaines</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Description de votre projet :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SmartCloud AI. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
