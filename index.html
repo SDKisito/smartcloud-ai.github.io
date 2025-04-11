@@ -304,25 +304,37 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form method="POST" action="https://formsubmit.co/diedhiou_zal@yahoo.fr">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nom complet <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="name" name="name" required aria-required="true">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                            <input type="email" class="form-control" id="email" name="email" required aria-required="true">
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Sujet <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="subject" name="subject" required aria-required="true">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required aria-required="true"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" aria-label="Envoyer le message">Envoyer</button>
-                    </form>
+<form id="contact-form" method="POST" action="https://formsubmit.co/diedhiou_zal@yahoo.fr">
+    <!-- Empêche le captcha Formsubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Personnalise l'objet de l'e-mail -->
+    <input type="hidden" name="_subject" value="Nouveau message depuis le site web !">
+    <!-- Redirige après envoi (facultatif, à modifier selon ta page de remerciement) -->
+    <input type="hidden" name="_next" value="https://tonsite.com/merci.html">
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Nom complet <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" name="name" required aria-required="true">
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+        <input type="email" class="form-control" id="email" name="email" required aria-required="true">
+    </div>
+
+    <div class="mb-3">
+        <label for="subject" class="form-label">Sujet <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="subject" name="subject" required aria-required="true">
+    </div>
+
+    <div class="mb-3">
+        <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+        <textarea class="form-control" id="message" name="message" rows="4" required aria-required="true"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" aria-label="Envoyer le message">Envoyer</button>
+</form>
+
                 </div>
             </div>
         </div>
