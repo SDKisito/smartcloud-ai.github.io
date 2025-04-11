@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détection Alzheimer | SmartCloud AI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation similaire -->
+
+    <main class="container my-5">
+        <article class="project-article">
+            <header class="hero-banner text-white text-center py-5 mb-5 rounded" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assets/img/projects/alzheimer-banner.jpg'); background-size: cover;">
+                <h1 class="display-3">Détection Précoce d'Alzheimer</h1>
+                <p class="lead">Par analyse d'images IRM avec Deep Learning</p>
+            </header>
+
+            <section class="mb-5">
+                <h2 class="mb-4">🧠 Contexte Scientifique</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Développement d'un système capable de détecter les signes précoces de la maladie d'Alzheimer 2 ans avant le diagnostic clinique avec une précision de 84.9%.</p>
+                        <div class="card mt-4">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="mb-0">Dataset ADNI</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>1 200 patients suivis sur 10 ans</li>
+                                    <li>8 000 scans IRM annotés</li>
+                                    <li>Données démographiques complètes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0">Impact Médical</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Détection 24 mois plus tôt</li>
+                                    <li>Réduction des faux négatifs de 40%</li>
+                                    <li>Analyse en 3 minutes vs 30min manuelle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-4">🖥 Architecture du Modèle</h2>
+                <div class="model-architecture">
+                    <div class="model-layer">
+                        <div class="layer-name">Input</div>
+                        <div class="layer-desc">IRM 3D (182×218×182)</div>
+                    </div>
+                    <div class="model-arrow">↓</div>
+                    <div class="model-layer">
+                        <div class="layer-name">Preprocessing</div>
+                        <div class="layer-desc">Normalisation, skull stripping</div>
+                    </div>
+                    <div class="model-arrow">↓</div>
+                    <div class="model-layer">
+                        <div class="layer-name">3D CNN</div>
+                        <div class="layer-desc">16 couches convolutives</div>
+                    </div>
+                    <div class="model-arrow">↓</div>
+                    <div class="model-layer">
+                        <div class="layer-name">Classification</div>
+                        <div class="layer-desc">Softmax à 3 classes</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-4">📊 Résultats Cliniques</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center py-3">
+                            <div class="display-4 text-primary">84.9%</div>
+                            <div class="text-muted">Précision globale</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center py-3">
+                            <div class="display-4 text-success">89.2%</div>
+                            <div class="text-muted">Sensibilité</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center py-3">
+                            <div class="display-4 text-info">82.1%</div>
+                            <div class="text-muted">Spécificité</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <style>
+        .hero-banner {
+            background-position: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+        
+        .model-architecture {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .model-layer {
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            width: 80%;
+            background: #f8f9fa;
+        }
+        
+        .layer-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .model-arrow {
+            font-size: 1.5rem;
+            color: #3498db;
+        }
+    </style>
+</body>
+</html>

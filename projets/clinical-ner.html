@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical NER | SmartCloud AI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation similaire au premier fichier -->
+
+    <main class="container my-5">
+        <article class="project-article">
+            <header class="mb-5 text-center">
+                <h1 class="display-4">Clinical Named Entity Recognition</h1>
+                <p class="lead text-muted">Système de reconnaissance d'entités médicales dans les comptes-rendus cliniques</p>
+                <img src="../assets/img/projects/clinical-ner.jpg" alt="Clinical NER" class="img-fluid rounded mt-4" style="max-height: 400px;">
+            </header>
+
+            <section class="mb-5">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 class="mb-4">🩺 Contexte Médical</h2>
+                        <p>Solution NLP pour identifier automatiquement les entités médicales (maladies, médicaments, symptômes) dans les comptes-rendus hospitaliers, réduisant le temps d'analyse de 70%.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-light p-3">
+                            <h5>🧠 Modèles Utilisés</h5>
+                            <ul class="list-unstyled">
+                                <li>• CamemBERT (français)</li>
+                                <li>• BioClinicalBERT (anglais)</li>
+                                <li>• Modèle custom CNN-BiLSTM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-4">🔍 Méthodologie</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h5>Prétraitement</h5>
+                            <p>Nettoyage des textes, tokenization médicale, gestion des acronymes</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h5>Annotation</h5>
+                            <p>Corpus de 50 000 phrases annotées par des médecins</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h5>Entraînement</h5>
+                            <p>Fine-tuning des modèles avec PyTorch</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="mb-4">📈 Performances</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <canvas id="metricsChart" width="400" height="300"></canvas>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Comparaison des Modèles</h5>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Modèle</th>
+                                    <th>Précision</th>
+                                    <th>Rappel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CamemBERT</td>
+                                    <td>83.8%</td>
+                                    <td>87.7%</td>
+                                </tr>
+                                <tr>
+                                    <td>BioClinicalBERT</td>
+                                    <td>85.2%</td>
+                                    <td>89.1%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script>
+        // Script pour le graphique de performances
+        const ctx = document.getElementById('metricsChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Précision', 'Rappel', 'F1-Score'],
+                datasets: [{
+                    label: 'Performance',
+                    data: [83.8, 87.7, 85.7],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)'
+                    ]
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 80,
+                        max: 100
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
