@@ -1,12 +1,3 @@
-/* Définition de la police Aptos Display */
-@font-face {
-    font-family: 'Aptos Display';
-    src: url('/assets/fonts/AptosDisplay.woff2') format('woff2'),
-         url('/assets/fonts/AptosDisplay.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Appliquer Aptos Display par défaut à tout le site */
 body {
     font-family: 'Aptos', sans-serif;
