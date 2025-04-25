@@ -1,6 +1,7 @@
 /* Appliquer Aptos Display par défaut à tout le site */
 body {
     font-family: 'Aptos', sans-serif;
+    font-size: 12px;
 }
 
 /* En-tête */
