@@ -1,15 +1,15 @@
-/* Reset et styles de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Définition de la police Aptos Display */
+@font-face {
+    font-family: 'Aptos Display';
+    src: url('/assets/fonts/AptosDisplay.woff2') format('woff2'),
+         url('/assets/fonts/AptosDisplay.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
+/* Appliquer Aptos Display par défaut à tout le site */
 body {
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    font-family: 'Aptos Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* En-tête */
