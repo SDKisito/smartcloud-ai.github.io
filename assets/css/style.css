@@ -1,6 +1,7 @@
 /* Justifier le texte pour tout le corps du texte */
-p {
+body p {
     text-align: justify;
+    width: 100%;
 }
 
 /* Appliquer Aptos Display par défaut à tout le site */
