@@ -1,4 +1,12 @@
 /* Appliquer Aptos Display par défaut à tout le site */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aptos', sans-serif;
+    font-size: 12px;
+}
+
 body {
     font-family: 'Aptos', sans-serif;
     font-size: 12px;
