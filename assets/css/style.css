@@ -1,3 +1,8 @@
+/* Justifier le texte pour tout le corps du texte */
+p {
+    text-align: justify;
+}
+
 /* Appliquer Aptos Display par défaut à tout le site */
 * {
     margin: 0;
