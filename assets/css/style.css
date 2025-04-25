@@ -10,6 +10,9 @@
 /* Appliquer Aptos Display par défaut à tout le site */
 body {
     font-family: 'Aptos Display', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 /* En-tête */
@@ -309,9 +312,6 @@ footer {
         font-size: 2rem;
     }
 }
-
-
-
 
 /* Styles spécifiques aux pages de projet */
 .project-detail {
